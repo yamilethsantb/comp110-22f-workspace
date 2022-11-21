@@ -1,83 +1,12 @@
-if letter == choosen_word[1] and letter == choosen_word[2] and letter == choosen_word[3] and letter == choosen_word[4] and letter == choosen_word[0]:
-    print("5 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[1] and letter == choosen_word[2] and letter == choosen_word[3] and letter == choosen_word[4]:
-    print("4 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[1] and letter == choosen_word[2] and letter == choosen_word[3]:
-    print("4 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[1] and letter == choosen_word[2] and letter == choosen_word[4]:
-    print("4 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[1] and letter == choosen_word[3] and letter == choosen_word[4]:
-    print("4 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[2] and letter == choosen_word[3] and letter == choosen_word[4]:
-    print("4 instances of " + letter + " found in " + choosen_word)
-    quit()
+from typing import Union 
 
-if letter == choosen_word[0] and letter == choosen_word[1] and letter == choosen_word[2]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[1] and letter == choosen_word[3]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[1] and letter == choosen_word[4]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[2] and letter == choosen_word[3]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[2] and letter == choosen_word[4]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[0] and letter == choosen_word[3] and letter == choosen_word[4]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[1] and letter == choosen_word[2] and letter == choosen_word[3]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[1] and letter == choosen_word[2] and letter == choosen_word[4]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[1] and letter == choosen_word[3] and letter == choosen_word[4]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
-if letter == choosen_word[2] and letter == choosen_word[3] and letter == choosen_word[4]:
-    print("3 instances of " + letter + " found in " + choosen_word)
-    quit()
+def add(lhs: float = 0.0, rhs: Union[str, float] = 0.0) -> float:
+    result: float = lhs
+    if isinstance(rhs, str):
+        result += float(rhs)
+    else: 
+        result += rhs
+    return result 
 
+print(add(110.0, "100.0"))
 
-if letter == choosen_word[2] and letter == choosen_word[3]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[2] and letter != choosen_word[3] and letter != choosen_word[0] and letter != choosen_word[1] and letter != choosen_word[4]:
-    print("1 instance of " + letter + " found in " + choosen_word)
-if letter == choosen_word[2] and letter == choosen_word[0]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[2] and letter == choosen_word[4]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[0] and letter == choosen_word[1]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[0] and letter == choosen_word[3]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[0] and letter == choosen_word[4]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[0] and letter != choosen_word[1] and letter != choosen_word[2] and letter != choosen_word[3] and letter != choosen_word[4]:
-    print("1 instance of " + letter + " found in " + choosen_word)
-if letter == choosen_word[1] and letter == choosen_word[2]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[1] and letter == choosen_word[3]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[1] and letter == choosen_word[4]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[1] and letter != choosen_word[0] and letter != choosen_word[2] and letter != choosen_word[3] and letter != choosen_word[4]:
-    print("1 instance of " + letter + " found in " + choosen_word)
-if letter == choosen_word[3] and letter == choosen_word[4]:
-    print("2 instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[3] and letter != choosen_word[0] and letter != choosen_word[2] and letter != choosen_word[1] and letter != choosen_word[4]:
-    print("1 instance of " + letter + " found in " + choosen_word)
-if letter != choosen_word[1] and letter != choosen_word[0] and letter != choosen_word[2] and letter != choosen_word[3] and letter != choosen_word[4]:
-    print("No instances of " + letter + " found in " + choosen_word)
-if letter == choosen_word[4] and letter != choosen_word[0] and letter != choosen_word[2] and letter != choosen_word[1] and letter != choosen_word[3]:
-    print("1 instance of " + letter + " found in " + choosen_word)
